@@ -42,6 +42,11 @@
 *.idb
 *.pdb
 
+# gcov file
+.gcov
+.gcda
+.gcno
+
 # Kernel Module Compile Results
 *.mod*
 *.cmd

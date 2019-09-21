@@ -25,4 +25,4 @@ clean:
 	@echo clean up env...
 	@-rm -r post
 	@-rm $(APP)
-	@-rm *.o
+	@-rm *.o *.gcov *.gcda *.gcno

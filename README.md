@@ -8,7 +8,7 @@
 例子：
 
 ```yaml
-language:c
+language: c
 
 compiler:
     - gcc
@@ -16,10 +16,12 @@ compiler:
 
 script:
     - make && make test
-    -./example
+    - ./example
 ```
 一个编译C的例子
-指定编译器gcc和clang
+指定编译器gcc和clang，两个编译器都会编译
+
+注意YAML语法:后要加上空格
 
 ## 增加TravisCI编译通过标签
 

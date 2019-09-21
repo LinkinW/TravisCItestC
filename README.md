@@ -9,11 +9,11 @@
 language:c
 
 compiler:
-	- gcc
-	- clang
+    - gcc
+    - clang
 
 script:
-	- make && make test
-	-./example
+    - make && make test
+    -./example
 ```
 

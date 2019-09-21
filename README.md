@@ -1,5 +1,6 @@
 # TravisCItestC
 [![Build Status](https://www.travis-ci.org/LinkinW/TravisCItestC.svg?branch=master)](https://www.travis-ci.org/LinkinW/TravisCItestC)
+
 学习Travis CI C语言项目的编译打包过程
 
 用.travis.yml文件控制Travis CI持续集成

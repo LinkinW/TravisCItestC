@@ -19,7 +19,10 @@ script:
     - ./example
 ```
 一个编译C的例子
-指定编译器gcc和clang，两个编译器都会编译
+
+指定编译器gcc和clang，两个编译器都会编译，并显示各自编译的结果，如图：
+
+![](./pic/compiler_result.png)
 
 注意YAML语法:后要加上空格
 

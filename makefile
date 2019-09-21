@@ -1,4 +1,3 @@
-CC=gcc
 
 SRC=test.c
 OBJ=$(SRC:%.c=%.o)

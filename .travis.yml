@@ -6,4 +6,4 @@ compiler:
 
 script:
     - make
-    -./test
+    - ./test

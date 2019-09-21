@@ -1,5 +1,6 @@
 # TravisCItestC
-[![Build Status](https://www.travis-ci.org/LinkinW/TravisCItestC.svg?branch=master)](https://www.travis-ci.org/LinkinW/TravisCItestC)[![codecov](https://codecov.io/gh/LinkinW/TravisCItestC/branch/master/graph/badge.svg)](https://codecov.io/gh/LinkinW/TravisCItestC)
+[![Build Status](https://www.travis-ci.org/LinkinW/TravisCItestC.svg?branch=master)](https://www.travis-ci.org/LinkinW/TravisCItestC)
+[![codecov](https://codecov.io/gh/LinkinW/TravisCItestC/branch/master/graph/badge.svg)](https://codecov.io/gh/LinkinW/TravisCItestC)
 
 学习Travis CI C语言项目的编译打包过程
 

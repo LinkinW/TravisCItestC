@@ -2,11 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+enum Status{running,stop};
+
 typedef struct
 {
     char name[50];
     int init_flag;
     int count;
+	enum Status status;
 }test_t,*test_handle;
 
 int main()

@@ -17,4 +17,4 @@ script:
     -./example
 ```
 一个编译C的例子
-
+指定编译器gcc和clang

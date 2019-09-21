@@ -16,6 +16,7 @@ script:
     - make && make test
     -./example
 ```
+一个编译C的例子
 
 
 

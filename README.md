@@ -17,3 +17,8 @@ script:
 	-./example
 ```
 
+
+
+## 增加TravisCI编译通过标签
+
+在github主页增加一个编译通过的标签。

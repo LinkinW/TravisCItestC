@@ -17,9 +17,9 @@ script:
     -./example
 ```
 一个编译C的例子
-
-
+指定编译器gcc和clang
 
 ## 增加TravisCI编译通过标签
 
 在github主页增加一个编译通过的标签。
+

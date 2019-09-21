@@ -1,7 +1,12 @@
+CC=gcc
 
 SRC=test.c
 OBJ=$(SRC:%.c=%.o)
 APP=test
+
+# for code coverage
+CFLAGS=-fprofile-arcs -ftest-coverage
+LFLAGS=-fprofile-arcs
 
 all: postbuild $(APP)
 
@@ -9,10 +14,10 @@ postbuild:
 	mkdir post
 
 $(APP):$(OBJ)
-	$(CC) -g $(OBJ) -o $(APP)
+	$(CC) $(LFLAGS) -g $(OBJ) -o $(APP)
 
 *.o:*.c
-	$(CC) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 .PHONY:clean all
 

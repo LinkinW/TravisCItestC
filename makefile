@@ -2,7 +2,7 @@ CC=gcc
 
 SRC=test.c
 OBJ=$(SRC:%.c=%.o)
-APP=test
+APP=testHello
 
 # for code coverage
 CFLAGS=-fprofile-arcs -ftest-coverage
@@ -11,15 +11,19 @@ LFLAGS=-fprofile-arcs
 all: postbuild $(APP)
 
 postbuild:
-	mkdir post
+	@#mkdir post
 
 $(APP):$(OBJ)
 	$(CC) $(LFLAGS) -g $(OBJ) -o $(APP)
 
 *.o:*.c
 	$(CC) $(CFLAGS) -c $< -o $@
+	
+test:
+	./$(APP)
+	gcov $(SRC)
 
-.PHONY:clean all
+.PHONY:clean all test
 
 clean:
 	@echo clean up env...

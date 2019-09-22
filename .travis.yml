@@ -6,8 +6,7 @@ compiler:
 
 script:
     - make
-    - ./test
-    - gcov test.c
+    - make test
 
 after_success:
     - bash <(curl -s https://codecov.io/bash)

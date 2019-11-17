@@ -3,15 +3,16 @@ language: c
 compiler: 
     - gcc
     - clang
+    
+stage: build
+name: "build and test."
+script: 
+  - make && make test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 
 jobs:
   include:
-    - stage: build
-      name: "build and test."
-      script: 
-        - make && make test
-      after_success:
-        - bash <(curl -s https://codecov.io/bash)
     - stage: deploy
       name: "deploy first test."
       script:

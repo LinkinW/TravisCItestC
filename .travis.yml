@@ -1,18 +1,17 @@
 language: c
 
+compiler:
+    - gcc
+    - clang
+
 jobs:
   include:
-    - stage: build
-      compiler:
-        - gcc
-        - clang
-      script:
-        - make && make test
     - stage: deploy
       script:
         - echo "start deploy..."
     
-script: true
+script: 
+    - make && make test
 
 after_success:
     - bash <(curl -s https://codecov.io/bash)

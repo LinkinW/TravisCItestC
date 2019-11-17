@@ -7,7 +7,7 @@ compiler:
 jobs:
   include:
     - stage: deploy
-    name: "deploy first test."
+      name: "deploy first test."
       script:
         - echo "start deploy..."
     

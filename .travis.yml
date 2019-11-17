@@ -9,8 +9,8 @@ jobs:
     - script:
         - make && make test
     - stage: deploy
-        script:
-            - echo "start deploy..."
+      script:
+        - echo "start deploy..."
     
 after_success:
     - bash <(curl -s https://codecov.io/bash)

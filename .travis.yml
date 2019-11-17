@@ -7,8 +7,7 @@ compiler:
 jobs:
   include:
     - script:
-        - make
-        - make test
+        - make && make test
     - stage: deploy
         script:
             - echo "start deploy..."

@@ -4,9 +4,14 @@ compiler:
     - gcc
     - clang
 
-script:
-    - make
-    - make test
-
+jobs:
+  include:
+    - script:
+        - make
+        - make test
+    - stage: deploy
+        script:
+            - echo "start deploy..."
+    
 after_success:
     - bash <(curl -s https://codecov.io/bash)

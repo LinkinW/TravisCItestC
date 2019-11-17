@@ -9,10 +9,9 @@ jobs:
         - clang
       script: 
         - make && make test
+      after_success:
+        - bash <(curl -s https://codecov.io/bash)
     - stage: deploy
       name: "deploy first test."
       script:
         - echo "start deploy..."
-
-after_success:
-    - bash <(curl -s https://codecov.io/bash)

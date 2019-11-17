@@ -2,10 +2,11 @@ language: c
 
 jobs:
   include:
-    compiler:
-      - gcc
-      - clang 
-    - script:
+    - stage: build
+      compiler:
+        - gcc
+        - clang
+      script:
         - make && make test
     - stage: deploy
       script:

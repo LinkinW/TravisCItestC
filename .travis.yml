@@ -3,8 +3,8 @@ language: c
 jobs:
   include:
     compiler:
-        - gcc
-        - clang 
+      - gcc
+      - clang 
     - script:
         - make && make test
     - stage: deploy

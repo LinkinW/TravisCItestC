@@ -17,3 +17,7 @@ jobs:
       name: "deploy first test."
       script:
         - echo "start deploy..."
+        
+notifications:
+  email:
+    on_success: always
